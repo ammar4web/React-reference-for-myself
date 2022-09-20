@@ -7,11 +7,13 @@ import PropTypes from "prop-types";
 // { this.props.___ }
 
 class Test extends React.Component {
+  handleButtonClick = () => console.log("onClick from Class");
   render() {
     return (
       <React.Fragment>
         <h2>Test: class | render() | return(...)</h2>
         <p>{ this.props.content } "in class"</p>
+        <button onClick={this.handleButtonClick}>Class</button>
       </React.Fragment>
     );
   }

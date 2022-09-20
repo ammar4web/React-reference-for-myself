@@ -21,6 +21,7 @@ function App() {
       <Props content="This is the Props From Props Component" >
         <h3>children</h3>
       </Props>
+      <button onClick={()=>console.log("onClick Events")}>Click Me</button>
     </div>
   );
 }
