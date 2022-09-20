@@ -7,13 +7,30 @@ import PropTypes from "prop-types";
 // { this.props.___ }
 
 class Test extends React.Component {
+  
+  // 
+  constructor(props) {
+    super(props);
+    this.state = {
+      counter: 0,
+    }
+  }
+  // 
+
   handleButtonClick = () => console.log("onClick from Class");
+  // 
   render() {
     return (
       <React.Fragment>
         <h2>Test: class | render() | return(...)</h2>
         <p>{ this.props.content } "in class"</p>
         <button onClick={this.handleButtonClick}>Class</button>
+        
+        {/*  */}
+        <p>{this.state.counter}</p>
+        <button onClick={() => this.setState({counter: this.state.counter + 1})}>+1</button>
+        {/*  */}
+      
       </React.Fragment>
     );
   }
