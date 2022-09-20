@@ -4,6 +4,10 @@ import "./App.css";
 import Test from "./Test";
 import Props from "./Props";
 
+// {props.___} in function // and insert "prpos" as parameter
+// { this.props.___ } in class
+
+
 // function App() {return ();} 
 // use Function rether than class when ever you can
 
