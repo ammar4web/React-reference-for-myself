@@ -15,7 +15,9 @@ function App() {
   return (
     <div className="App">
       <h1>Hello. I'm Ammar</h1>
-      <Test content="This is the Test Component" />
+      {/* in consol you see Warning: Failed because of array you should write string */}
+      <Test content= {[1,2]} />
+      {/*  */}
       <Props content="This is the Props From Props Component" >
         <h3>children</h3>
       </Props>

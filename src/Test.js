@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // class Test extends React.Component { render() {return ();} }
 // <React.Fragment></React.Fragment> }
@@ -17,3 +18,7 @@ class Test extends React.Component {
 }
 
 export default Test;
+
+Test.propTypes = {
+  content: PropTypes.string,
+}
