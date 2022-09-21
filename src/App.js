@@ -3,6 +3,7 @@ import "./App.css";
 // 
 import Test from "./Test";
 import Props from "./Props";
+import ClickCount from "./Hooks/ClickCount";
 
 // {props.___} in function // and insert "prpos" as parameter
 // { this.props.___ } in class
@@ -22,6 +23,9 @@ function App() {
         <h3>children</h3>
       </Props>
       <button onClick={()=>console.log("onClick Events")}>Click Me</button>
+
+      {/* Hooks */}
+      <ClickCount />
     </div>
   );
 }
