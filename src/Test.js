@@ -17,9 +17,41 @@ class Test extends React.Component {
   }
   // 
 
+  // 
+  // render(){} ينفذ هذا التابع بعد  تنفيذ التابع
+  // componentDidMount(){} ينفذ هذا التابع بعد  تنفيذ التابع
+  // هذا التابع يستطيع ااستخدام الدالة
+  // setState()
+  // State وتغير حالة المكون
+  componentDidUpdate() {
+    if (this.state.counter === 10){
+      console.log("لقد نقرت على الزر 10 مرات")
+    }
+    console.log("componentDidUpdate() runs after render(){} and after componentDidMount()")
+  }
+  // 
+
+  // 
+  // render(){} ينفذ هذا التابع مباشرة بعد  تنفيذ التابع
+  // هذا التابع يستطيع ااستخدام الدالة
+  // setState()
+  // State وتغير حالة المكون
+  componentDidMount() {
+    console.log("componentDidMount() runs after render(){}")
+  }
+  // 
+
+  // 
+  // للاطلاع فقط
+  // componentWillMount() {}
+  // render(){} ينفذ هذا التابع قبل لحظات من تنفيذ التابع
+  // لم يعد يستخدم حاليا كما تم استبداله بتابع آخر
+  // 
+
   handleButtonClick = () => console.log("onClick from Class");
   // 
   render() {
+    console.log("render(){}")
     return (
       <React.Fragment>
         <h2>Test: class | render() | return(...)</h2>
