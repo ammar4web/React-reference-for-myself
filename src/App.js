@@ -5,6 +5,7 @@ import Test from "./Test";
 import Props from "./Props";
 import ClickCount from "./Hooks/ClickCount";
 import One from "./if/One";
+import Style from "./style/Style";
 
 // {props.___} in function // and insert "prpos" as parameter
 // { this.props.___ } in class
@@ -31,6 +32,9 @@ function App() {
       <hr />
       {/* if */}
       <One />
+
+      {/*  */}
+      <Style />
     </div>
   );
 }
